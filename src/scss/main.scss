@@ -1,12 +1,15 @@
-@import "../../node_modules/normalize-scss/sass/normalize/import-now";
-@import "partials/variables";
+@import '../../node_modules/normalize-scss/sass/normalize/import-now';
+@import 'partials/variables';
 
-@import "partials/globals";
-@import "partials/fonts";
-@import "partials/functions";
+@import 'partials/globals';
+@import 'partials/fonts';
+@import 'partials/functions';
 
-@import "partials/layout";
+@import 'partials/layout';
 //components
-@import "components/nav";
-@import "components/intro";
-@import "components/btn";
+@import 'components/headlines';
+@import 'components/nav';
+@import 'components/intro';
+@import 'components/btn';
+@import 'components/cards';
+@import 'components/posts';

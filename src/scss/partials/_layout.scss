@@ -1,17 +1,18 @@
 .box {
-    width: 100%;
-    box-sizing: border-box;
+  width: 100%;
+  box-sizing: border-box;
+  &#{&}--header {
+    display: flex;
+    justify-content: flex-end;
+  }
+  &#{&}--maxW {
+    max-width: rem($breakpoint-lg + 30px);
+    padding-left: rem(15px);
+    padding-right: rem(15px);
+    margin: auto;
+  }
 
-    &#{&}--header {        
-        display: flex;
-        justify-content: flex-end;
-    }
-    
-    &#{&}--maxW {
-        max-width: rem($breakpoint-lg + 30px);
-        padding-left: rem(15px);
-        padding-right: rem(15px);
-        margin: auto;
-    }
-
-};
+  &#{&}--bg{
+    background-color: $secondary-light;
+  }
+}
