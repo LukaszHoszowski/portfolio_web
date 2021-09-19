@@ -10,4 +10,7 @@ npm i
 #start development
 npm run dev
 
+#start build (uglified and compressed)
+npm run build
+
 ```
