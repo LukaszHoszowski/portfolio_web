@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "node ./node_modules/.bin/sass ./src/scss/main.scss ./src/css/styles.css --watch"
+    "dev": "node ./node_modules/.bin/sass ./src/scss/main.scss ./src/css/styles.css --watch",
+    "build": "node ./node_modules/.bin/sass ./src/scss/main.scss ./src/css/styles.css --style compressed"
   },
   "repository": {
     "type": "git",
