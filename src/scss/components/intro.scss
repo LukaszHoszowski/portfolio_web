@@ -3,6 +3,13 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding-top: rem(15px);
+  padding-bottom: rem(15px);
+  box-sizing: border-box;
+  @include mq('sm') {
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
 
   #{&}__lead {
     display: block;
@@ -10,20 +17,30 @@
 
   #{&}__item {
     width: 100%;
+    @include mq('sm') {
+      text-align: center;
+    }
 
     &.intro__item--align {
       text-align: right;
+      @include mq('sm') {
+        text-align: center;
+      }
     }
+
   }
 
   #{&}__hdl {
     margin-bottom: rem(22px);
-    @include hdl(44px, $line-height: 1.4, $weight: 'Bold')
+    @include hdl(44px, $line-height: 1.4, $weight: 'Bold');
+    @include mq('sm') {
+      font-size: rem(32px);
+    }
   }
 
   #{&}__text {
-    @include paragraph;
     margin-bottom: rem(30px);
+    @include paragraph;
   }
 
   #{&}__avatar {
@@ -31,8 +48,11 @@
     height: auto;
     max-width: rem(243px);
     max-height: rem(243px);
-    border: rem(1px) solid $black;
+    box-shadow: -5px 13px 0 0 $secondary-light;
     border-radius: 50%;
-    box-shadow: -10px 10px $shadow;
+    @media screen and (max-width: rem(600px)){
+      max-width: rem(170px);
+      max-height: rem(170px);
+    }
   }
 }
